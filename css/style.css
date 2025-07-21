@@ -1,0 +1,374 @@
+@charset "UTF-8";
+
+/* --- Reset Básico e Estilos globais --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    width: 100%;
+    max-width: 960px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+
+/*Estilo das seções*/
+section {
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* --- Estilos do cabeçalho --- */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-size: 2.5em;
+    font-family: sans-serif;
+}
+
+header p {
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+
+/* --- Estilo da navegação (Nav)--- */
+nav {
+    background-color: #34495e;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+ nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: 600;
+    font-size: 1.05em;
+    padding: 10px 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+ }
+
+ nav ul li a:hover {
+    background-color: #2980b9;
+    color: #ffffff;
+ }
+
+
+ /* --- Estilo das seções Gerais --- */
+ section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+ }
+
+ section h2 {
+    color: #34495e;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }
+
+ section h2 .fas, section h2 .fab {
+    color: #007bff;
+    font-size: 1.2em;
+ }
+
+ /* --- Estilos para Experiência e Educação --- */
+ #experiencia article,
+ #educacao article {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #e0e0e0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+ }
+
+ #experiencia article:last-child,
+ #educacao article:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+ }
+
+ #experiencia h3,
+ #educacao h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 5px;
+    flex-basis: 100%;
+    font-size: 1.3em;
+ }
+
+ #experiencia p strong,
+ #educacao p strong {
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+ }
+
+ #experiencia .data,
+ #educacao .data {
+    color: #777;
+    font-size: 0.9em;
+    flex-basis: 100%;
+    text-align: left;
+    margin-top: -10px;
+ }
+
+ #experiencia ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 100%;
+ }
+ 
+ #experiencia ul li {
+    margin-bottom: 5px;
+ }
+
+ /* --- Esstilos para Habilidades --- */
+ .lista-habilidades {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+ }
+
+ .lista-habilidades li {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 6px  solid #007bff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    font-weight: 500;
+    color: #444;
+ }
+
+ /* --- Estilos para Projetos --- */
+ .projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+ }
+
+ .projeto-card {
+    background-color: #ffffff;
+    border: 1px solid#e0e0e0;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    /*Configuração Flexbox para o card: */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+ }
+
+ .projeto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+ }
+
+ .projeto-card h3 {
+    color: #0056b3;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    text-align: left;
+    width: 100%;
+ }
+
+ .projeto-card p {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 0.95em;
+    text-align: left;
+    flex-grow: 1;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+ }
+
+ .projeto-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #666;
+    text-align: left;
+    width: 100%;
+ }
+
+ .projeto-card ul li {
+    background-color: #e9ecef;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #34495e;
+ }
+
+ .projeto-links {
+    margin-top: auto;
+    padding-top: 15px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+ }
+
+ .projeto-links a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+ }
+
+ .projeto-links a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+ }
+
+
+ /* --- Estilo do rodapé --- */
+ footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #777;
+    font-size: 0.9em;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+    width: 100%;
+ }
+
+ /* --- Responsividade Geral --- */
+  @media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    /*Ajustes para experiência e educação em telas menoras */
+    #experiencia article,
+    #educacao article {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #experiencia .data,
+    #educacao .data {
+        text-align: left;
+        margin-top: 5px;
+    }
+
+    .lista-habilidades {
+        grid-template-columns: 1fr;
+    }
+
+    .projetos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projeto-card p,
+    .projeto-card ul {
+        font-size: 0.9em;
+    }
+
+    .projeto-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .projeto-links a {
+        width: 100%;
+        text-align: center;
+    }
+ }
